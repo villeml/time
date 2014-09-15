@@ -180,4 +180,4 @@ module.exports = require('eden-class').extend(function(prototype) {
 	-------------------------------*/
 	/* Private Methods
 	-------------------------------*/
-}).register('eden/string').singleton();
+}).register('eden/time').singleton();
