@@ -1,7 +1,7 @@
 {
   "name": "eden-time",
   "description": "Eden Node JS Time Methods",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "name": "Christian Blanquera",
     "email": "cblanquera@openovate.com"
@@ -14,8 +14,7 @@
     "mocha": "1.21.4"
   },
   "dependencies": {
-	"argument": "0.0.2",
-	"eden-class": "0.0.5" 
+	"eden-class": "0.0.6" 
   },
   "main": "./time.js",
   "repository": {

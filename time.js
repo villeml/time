@@ -1,8 +1,6 @@
 module.exports = require('eden-class').extend(function(prototype) {
 	/* Require
 	-------------------------------*/
-	var argument = require('argument');
-	
 	/* Constants
 	-------------------------------*/
 	/* Public.Properties
@@ -45,7 +43,7 @@ module.exports = require('eden-class').extend(function(prototype) {
 	 */
 	prototype.toDate = function(time, addTime, longformat) {
 		//Argument Testing
-		argument
+		this.argument()
 			.test(1, 'int')
 			.test(2, 'bool', 'undefined')
 			.test(3, 'bool', 'undefined');
@@ -106,7 +104,7 @@ module.exports = require('eden-class').extend(function(prototype) {
 	 */
 	prototype.toRelative = function(time) {
 		//Argument Testing
-		argument.test(1, 'int');
+		this.argument().test(1, 'int');
 		
 		var dateNow	= new Date();
 		var now 	= dateNow.getTime();
@@ -171,7 +169,7 @@ module.exports = require('eden-class').extend(function(prototype) {
 	 */
 	prototype.toGMTRelative = function(time) {
 		//Argument Testing
-		argument.test(1, 'int');
+		this.argument().test(1, 'int');
 		
 		return this.toRelative(time - this.offset);
 	};
